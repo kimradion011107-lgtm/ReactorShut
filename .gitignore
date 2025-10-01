@@ -1,0 +1,53 @@
+# Godot 4+ specific ignores
+.godot/
+/android/
+# Godot junk
+.import/
+.export/
+export_presets.cfg
+*.import          # Also ignore all .import files
+
+# System and backup filth
+.DS_Store
+Thumbs.db
+*.tmp
+*.bak
+
+# Godot temp/cache folders (sometimes present)
+.cache/
+.cache/*
+*.log             # Godot sometimes generates log files
+
+# OS generated files (optional but recommended)
+ehthumbs.db
+Icon?
+Desktop.ini
+
+# VSCode / IDE junk (optional)
+.vscode/
+*.code-workspace
+
+# User-specific Godot config (optional but sane)
+*.godot/userprefs.cfg
+
+# Ignore swap files created by editors
+*~
+*.swp
+*.swo
+
+# Ignore build artifacts (if you ever compile anything outside Godot)
+bin/
+build/
+
+# Ignore coverage or test results (if you add tests)
+coverage/
+test-results/
+
+# Ignore dependency folders if you use third-party tools or package managers
+node_modules/
+.venv/
+.env/
+
+# Ignore any local OS specific hidden files
+*.Spotlight-V100/
+*.Trashes/
